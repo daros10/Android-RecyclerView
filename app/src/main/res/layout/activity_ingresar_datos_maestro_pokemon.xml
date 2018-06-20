@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngresarDatosMaestroPokemon">
+
+
+    <EditText
+        android:id="@+id/txtNombreMaestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/txtNombreMaestroPokemon"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtApellidoMaestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtApellioMaestroPokemon"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreMaestro"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreMaestro" />
+
+    <EditText
+        android:id="@+id/txtFechaMaestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtFechaNacimiento"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtApellidoMaestro"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidoMaestro" />
+
+    <EditText
+        android:id="@+id/txtMedallasMaestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtNumeroMedallas"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtFechaMaestro"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaMaestro" />
+
+    <EditText
+        android:id="@+id/txtNombrePokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/txtCampeonActual"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMedallasMaestro"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedallasMaestro" />
+
+    <Button
+        android:id="@+id/btnGuardarMaestroPokemon"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btnGuardarMaestroPokemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombrePokemon"
+        app:layout_constraintVertical_bias="0.153" />
+</android.support.constraint.ConstraintLayout>

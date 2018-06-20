@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">RecyclerViewExamenPokemon</string>
+    <string name="btn_crear">Crear</string>
+    <string name="btn_listar">Listar</string>
+    <string name="btn_detalleMaestroPokemon">Detalle</string>
+    <string name="btnGuardarMaestroPokemon">Guardar</string>
+    <string name="txtNombreMaestroPokemon">Nombre</string>
+    <string name="txtApellioMaestroPokemon">Apellido</string>
+    <string name="txtFechaNacimiento">Fecha</string>
+    <string name="txtNumeroMedallas">Medallas</string>
+    <string name="txtCampeonActual">Campeon</string>
+    <string name="txtTituloDetalle">Detalle Maestor Pokemon</string>
+    <string name="txtNumeroPokemon">Numero Pokemon</string>
+    <string name="txtNombrePokemon">Nombre Pokemon</string>
+    <string name="txtPoderEspecialUno">Poder Uno</string>
+    <string name="txtPoderEspecialDos">Poder Dos</string>
+    <string name="txtFechaCaptura">Fecha Captura</string>
+    <string name="txtNivel">Nivel</string>
+    <string name="txtTituloPokemon">Registrar Pokemon</string>
+    <string name="txtidEntrenado">Id</string>
+
 </resources>
+

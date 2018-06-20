@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarPokemones"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/txtNumeroPokemon"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/txtNumeroPokemon"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNombrePokemon"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombrePokemon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombrePokemon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="@string/txtNombrePokemon"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtPoderDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNumeroPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/txtFechaCaptura"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/txtFechaCaptura"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNivel"
+        app:layout_constraintEnd_toStartOf="@+id/txtNivel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPoderUno"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/txtPoderEspecialUno"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPoderDos"
+        app:layout_constraintEnd_toStartOf="@+id/txtPoderDos"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPoderDos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="@string/txtPoderEspecialDos"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtNivel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPoderUno"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombrePokemon" />
+
+    <Button
+        android:id="@+id/btnGuardarPokemon"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/btnGuardarMaestroPokemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtIdEntrenador"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdEntrenador" />
+
+    <EditText
+        android:id="@+id/txtNivel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="@string/txtNivel"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtIdEntrenador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtFechaCaptura"
+        app:layout_constraintTop_toBottomOf="@+id/txtPoderDos" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="121dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/txtTituloPokemon"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombrePokemon"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombrePokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIdEntrenador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="@string/txtidEntrenado"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardarPokemon"
+        app:layout_constraintEnd_toStartOf="@+id/txtNivel"
+        app:layout_constraintStart_toStartOf="@+id/txtNivel"
+        app:layout_constraintTop_toBottomOf="@+id/txtNivel" />
+</android.support.constraint.ConstraintLayout>
